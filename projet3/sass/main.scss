@@ -1,0 +1,18 @@
+@import "utils/variables";
+@import "base/font";
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 0;
+}
+.heading__logo{
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo--size{
+        width: 164px;
+        height: 28px;
+    }
+}
