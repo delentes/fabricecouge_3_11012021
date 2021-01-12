@@ -3,13 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="scss/style.scss">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 	<title>ohmyfood</title>
 </head>
 <body>
 	<div>
 		<header>
-			<img src="pictures/ohmyfood.png" alt="logo">
+			<div>
+				<img src="pictures/ohmyfood.png" alt="logo">
+			</div>
 			<div>
 				<i class="fas fa-map-marker-alt"></i>
 				<p>Paris,Belleville</p>
@@ -23,75 +26,76 @@
 		<section>
 			<article>
 				<h2>Fonctionnement</h2>
-				<ol>
-					<li>
-						<i class="fas fa-mobile-alt"></i>
-						<p>Choisissez un restaurant</p>
-					</li>
-					<li>
-						<i class="fas fa-list"></i>
-						<p>Composez votre menu</p>
-					</li>
-					<li>
-						<i class="fas fa-store"></i>
-						<p>Dégustez au restaurant</p>
-					</li>
-				</ol>
+				<div>
+					<p>1</p>
+					<i class="fas fa-mobile-alt"></i>
+					<p>Choisissez un restaurant</p>
+				</div>
+				<div>
+					<p>2</p>
+					<i class="fas fa-list"></i>
+					<p>Composez votre menu</p>
+				</div>
+				<div>
+					<p>3</p>
+					<i class="fas fa-store"></i>
+					<p>Dégustez au restaurant</p>
+				</div>
 			</article>
 			<article>
 				<h2 id="restaurants">Restaurants</h2>
-				<div>
+				<figure>
 					<img src="pictures/palette.jpg">
 					<p>Nouveau</p>
-					<div>
+					<figcaption>
 						<div>
 							<h3>La palette du goût</h3>
 							<p>Ménilmontant</p>
 						</div>
-						<i class="fal fa-heart"></i>
-					</div>
-				</div>
-				<div>
+						<i class="far fa-heart"></i>
+					</figcaption>
+				</figure>
+				<figure>
 					<img src="pictures/note.jpg">
 					<p>Nouveau</p>
-					<div>
+					<figcaption>
 						<div>
 							<h3>La note enchantée</h3>
 							<p>Charonne</p>
 						</div>
-						<i class="fal fa-heart"></i>
-					</div>
-				</div>
-				<div>
+						<i class="far fa-heart"></i>
+					</figcaption>
+				</figure>
+				<figure>
 					<img src="pictures/francaise.jpg">
-					<div>
+					<figcaption>
 						<div>
-							<h3>&Agrve; la française</h3>
+							<h3>&Agrave; la française</h3>
 							<p>Cité Rouge</p>
 						</div>
-						<i class="fal fa-heart"></i>
-					</div>
-				</div>
-				<div>
+						<i class="far fa-heart"></i>
+					</figcaption>
+				</figure>
+				<figure>
 					<img src="pictures/delice.jpg">
-					<div>
+					<figcaption>
 						<div>
 							<h3>Le délice des sens</h3>
 							<p>Folie-Méricourt</p>
 						</div>
-						<i class="fal fa-heart"></i>
-					</div>
-				</div>
+						<i class="far fa-heart"></i>
+					</figcaption>
+				</figure>
 			</article>
 		</section>
 		<footer>
 			<img src="pictures/ohmyfood.png" alt="logo">
 			<div>
-				<i class="far fa-utensils"></i>
+				<i class="fas fa-utensils"></i>
 				<p>Propser un restaurant</p>
 			</div>
 			<div>
-				<i class="far fa-hands-helping"></i>
+				<i class="fas fa-hands-helping"></i>
 				<p>Devenir partenaire</p>
 			</div>
 			<a href="#">Mentions légales</a>
