@@ -7,6 +7,10 @@ body {
   margin: 0;
 }
 
+i {
+  margin-right: 1em;
+}
+
 .heading__logo {
   height: 63px;
   display: flex;
@@ -16,6 +20,102 @@ body {
 .heading__logo .logo--size {
   width: 164px;
   height: 28px;
+}
+.heading__map {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading__mapsearch {
+  border: 0;
+  -webkit-appearance: none;
+  outline: none;
+}
+.heading__text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.operation {
+  margin-left: 20px;
+}
+.operation__title {
+  margin-bottom: 30px;
+}
+.operation__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.operation__container__container2 {
+  position: relative;
+  width: 335px;
+  display: flex;
+  flex-direction: row;
+  justify-self: start;
+}
+.operation__container__container2__number {
+  color: white;
+  display: flex;
+  position: absolute;
+  top: 11px;
+  left: -3px;
+  border-radius: 100%;
+  background-color: #9356dc;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.operation__container__container2__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 25px 10px;
+  height: 72px;
+  width: 325px;
+  border-radius: 1em;
+  box-shadow: 2px 2px 2px 2px gray;
+}
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.restaurant__fig {
+  width: 335px;
+  height: 251px;
+  border-radius: 1em;
+  box-shadow: 0 4px gray;
+  margin: 0 0 18px 0;
+  position: relative;
+}
+.restaurant__fig__link {
+  text-decoration: none;
+  color: black;
+}
+.restaurant__fig__link__img {
+  width: 335px;
+  height: 174px;
+  object-fit: cover;
+  border-radius: 1em 1em 0 0;
+}
+.restaurant__fig__link__new {
+  width: 79px;
+  height: 29px;
+  background-color: #99e2d0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  border-radius: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */

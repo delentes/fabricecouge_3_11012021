@@ -9,82 +9,98 @@
 </head>
 <body>
 	<div>
-		<header>
+		<header class="heading">
 			<div class="heading__logo">
 				<img class="logo--size" src="pictures/ohmyfood.png">
 			</div>
 			<div class="heading__map">
 				<i class="fas fa-map-marker-alt"></i>
-				<input type="search" name="texte" value="Paris,Belleville">
+				<input class="map__search " type="text" name="texte" value="Paris,Belleville">
 			</div>
-			<div class="heading__title">
-				<h2>Réservez le menu qui vous convient</h2>
+			<div class="heading__text">
+				<h2 class="text__title">Réservez le menu qui vous convient</h2>
 				<p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-				<a href="#restaurants">Explorer nos restaurants</a>
+				<a href="#restaurant__title">Explorer nos restaurants</a>
 			</div>
 		</header>
 		<section>
-			<article>
-				<h2>Fonctionnement</h2>
-				<div>
-					<p>1</p>
-					<i class="fas fa-mobile-alt"></i>
-					<p>Choisissez un restaurant</p>
-				</div>
-				<div>
-					<p>2</p>
-					<i class="fas fa-list"></i>
-					<p>Composez votre menu</p>
-				</div>
-				<div>
-					<p>3</p>
-					<i class="fas fa-store"></i>
-					<p>Dégustez au restaurant</p>
+			<article class="operation">
+				<h2 class="operation__title">Fonctionnement</h2>
+				<div class="operation__container">
+					<div class="operation__container__container2">
+						<p class="operation__container__container2__number">1</p>
+						<div class="operation__container__container2__button">
+							<i class="fas fa-mobile-alt"></i>
+							<p>Choisissez un restaurant</p>
+						</div>
+					</div>
+					<div class="operation__container__container2">
+						<p class="operation__container__container2__number">2</p>
+						<div class="operation__container__container2__button">
+							<i class="fas fa-list"></i>
+							<p>Composez votre menu</p>
+						</div>
+					</div>
+					<div class="operation__container__container2">
+						<p class="operation__container__container2__number">3</p>
+						<div class="operation__container__container2__button">
+							<i class="fas fa-store"></i>
+							<p>Dégustez au restaurant</p>
+						</div>
+					</div>
 				</div>
 			</article>
-			<article>
-				<h2 id="restaurants">Restaurants</h2>
-				<figure>
-					<img src="pictures/palette.jpg">
-					<p>Nouveau</p>
-					<figcaption>
-						<div>
-							<h3>La palette du goût</h3>
-							<p>Ménilmontant</p>
-						</div>
-						<i class="far fa-heart"></i>
+			<article class="restaurant">
+				<h2 id="restaurant__title">Restaurants</h2>
+				<figure class="restaurant__fig">
+					<a class="restaurant__fig__link" href="">
+						<img class="restaurant__fig__link__img" src="pictures/palette.jpg">
+						<p class="restaurant__fig__link__new">Nouveau</p>
+						<figcaption class="restaurant__fig__link__captation">
+							<div>
+								<h3>La palette du goût</h3>
+								<p>Ménilmontant</p>
+							</div>
+							<i class="far fa-heart"></i>
+						</figcaption>
+					</a>
+				</figure>
+				<figure class="restaurant__fig">
+					<a class="restaurant__fig__link" href="">
+						<img class="restaurant__fig__link__img" src="pictures/note.jpg">
+						<p class="restaurant__fig__link__new">Nouveau</p>
+						<figcaption class="restaurant__fig__link__captation">
+							<div>
+								<h3>La note enchantée</h3>
+								<p>Charonne</p>
+							</div>
+							<i class="far fa-heart"></i>
+					</a>
 					</figcaption>
 				</figure>
-				<figure>
-					<img src="pictures/note.jpg">
-					<p>Nouveau</p>
-					<figcaption>
-						<div>
-							<h3>La note enchantée</h3>
-							<p>Charonne</p>
-						</div>
-						<i class="far fa-heart"></i>
-					</figcaption>
+				<figure class="restaurant__fig">
+					<a class="restaurant__fig__link">
+						<img class="restaurant__fig__link__img" src="pictures/francaise.jpg">
+						<figcaption class="restaurant__fig__link__captation">
+							<div>
+								<h3>&Agrave; la française</h3>
+								<p>Cité Rouge</p>
+							</div>
+							<i class="far fa-heart"></i>
+						</figcaption>
+					</a>
 				</figure>
-				<figure>
-					<img src="pictures/francaise.jpg">
-					<figcaption>
-						<div>
-							<h3>&Agrave; la française</h3>
-							<p>Cité Rouge</p>
-						</div>
-						<i class="far fa-heart"></i>
-					</figcaption>
-				</figure>
-				<figure>
-					<img src="pictures/delice.jpg">
-					<figcaption>
-						<div>
-							<h3>Le délice des sens</h3>
-							<p>Folie-Méricourt</p>
-						</div>
-						<i class="far fa-heart"></i>
-					</figcaption>
+				<figure class="restaurant__fig">
+					<a class="restaurant__fig__link">
+						<img class="restaurant__fig__link__img" src="pictures/delice.jpg">
+						<figcaption class="restaurant__fig__link__captation">
+							<div>
+								<h3>Le délice des sens</h3>
+								<p>Folie-Méricourt</p>
+							</div>
+							<i class="far fa-heart"></i>
+						</figcaption>
+					</a>
 				</figure>
 			</article>
 		</section>

@@ -6,13 +6,86 @@
 body{
     margin: 0;
 }
-.heading__logo{
-    height: 63px;
+i{
+    margin-right: 1em;
+}
+.heading{
+    &__logo{
+        height: 63px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo--size{
+            width: 164px;
+            height: 28px;
+        }
+    }
+    &__map{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &search{
+            border: 0;
+            -webkit-appearance: none;
+            outline: none;
+        }
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.operation{
+    margin-left: 20px;
+    &__title{
+        margin-bottom: 30px;
+    }
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        &__container2{
+            position: relative;
+            width: 335px;
+            display: flex;
+            flex-direction: row;
+            justify-self: start;
+            &__number{
+                color: white;
+                display: flex;
+                position: absolute;
+                top: 11px;
+                left: -3px;
+                border-radius: 100%;
+                background-color: $primary;
+                width: 24px;
+                height: 24px;
+                justify-content: center;
+                align-items: center;
+            }
+            &__button{
+                @include btn;
+            }
+        }
+    }
+}
+.restaurant{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    .logo--size{
-        width: 164px;
-        height: 28px;
+    flex-direction: column;
+    margin-left: 20px;
+    &__fig{
+        @include index-thumbnail;
+        &__link{
+            text-decoration: none;
+            color: black;
+            &__img{
+                @include index-picture;
+            }
+            &__new{
+                @include new;
+            }
+        }
     }
 }
