@@ -1,8 +1,7 @@
 @import "utils/variables";
 @import "base/font";
-*{
-    font-family: 'Roboto', sans-serif;
-}
+@import "layouts/footer";
+@import "layouts/heading";
 body{
     margin: 0;
 }
@@ -11,20 +10,11 @@ i{
 }
 .heading{
     &__logo{
-        height: 63px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .logo--size{
-            width: 164px;
-            height: 28px;
-        }
+        @include head;
     }
     &__map{
         height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend .layout-heading;
         &search{
             border: 0;
             -webkit-appearance: none;
@@ -32,9 +22,29 @@ i{
         }
     }
     &__text{
-        display: flex;
         flex-direction: column;
+        justify-content: center;
         text-align: center;
+        &__title{
+            width: 300px;
+            margin-left: 30px;
+        }
+        &__byline{
+            margin-left: 10px;
+            font-size: 1.1em;
+        }
+        &__btn{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 218px;
+            height: 50px;
+            background-color: $secondary;
+            color: white;
+            text-decoration: none;
+            border-radius: 2em;
+            margin-left: 10px;
+        }
     }
 }
 .operation{
@@ -75,16 +85,20 @@ i{
     display: flex;
     flex-direction: column;
     margin-left: 20px;
-    &__fig{
-        @include index-thumbnail;
-        &__link{
-            text-decoration: none;
-            color: black;
+    &__link{
+        text-decoration: none;
+        color: black;
+        &__fig{
+            @include index-thumbnail;
             &__img{
                 @include index-picture;
             }
             &__new{
                 @include new;
+            }
+            &__caption{
+                display: flex;
+                flex-direction: row;
             }
         }
     }

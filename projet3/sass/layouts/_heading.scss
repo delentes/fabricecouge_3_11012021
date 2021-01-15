@@ -1,0 +1,13 @@
+.layout-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin head{
+    height: 63px;
+    @extend .layout-heading;
+     &--size{
+        height: 28px;
+        width: 164px;
+    }
+}

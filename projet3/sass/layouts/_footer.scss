@@ -1,0 +1,25 @@
+.footer{
+    background-color: gray;
+    padding-bottom: 37px;
+    &__logo--size{
+        fill: white;
+        height: 18px;
+        width: 100px;
+        margin: 20px 0 20px 20px;
+        filter: invert(1);
+    }
+    &__link{
+        margin: 0 0 9px 20px;
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        color: white;
+        align-items: center;
+        &__helping{
+            font-size: 13px;
+        }
+        &__byline{
+            margin: 0;
+        }
+    }
+}

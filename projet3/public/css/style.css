@@ -1,6 +1,40 @@
-@import url("https://fonts.googleapis.com/css2? family = Roboto:wght@300;400;500;600;700;800;900& display = swap");
+/* variables */
+/* mixin */
+@import url("https://fonts.googleapis.com/css3? family = Roboto:wght@300;400;500;600;700;800;900& display = swap");
 * {
   font-family: "Roboto", sans-serif;
+}
+
+.footer {
+  background-color: gray;
+  padding-bottom: 37px;
+}
+.footer__logo--size {
+  fill: white;
+  height: 18px;
+  width: 100px;
+  margin: 20px 0 20px 20px;
+  filter: invert(1);
+}
+.footer__link {
+  margin: 0 0 9px 20px;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: white;
+  align-items: center;
+}
+.footer__link__helping {
+  font-size: 13px;
+}
+.footer__link__byline {
+  margin: 0;
+}
+
+.layout-heading, .heading__map, .heading__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
@@ -13,19 +47,13 @@ i {
 
 .heading__logo {
   height: 63px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.heading__logo .logo--size {
-  width: 164px;
+.heading__logo--size {
   height: 28px;
+  width: 164px;
 }
 .heading__map {
   height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .heading__mapsearch {
   border: 0;
@@ -33,9 +61,29 @@ i {
   outline: none;
 }
 .heading__text {
-  display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
+}
+.heading__text__title {
+  width: 300px;
+  margin-left: 30px;
+}
+.heading__text__byline {
+  margin-left: 10px;
+  font-size: 1.1em;
+}
+.heading__text__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 218px;
+  height: 50px;
+  background-color: #ff79da;
+  color: white;
+  text-decoration: none;
+  border-radius: 2em;
+  margin-left: 10px;
 }
 
 .operation {
@@ -86,7 +134,11 @@ i {
   flex-direction: column;
   margin-left: 20px;
 }
-.restaurant__fig {
+.restaurant__link {
+  text-decoration: none;
+  color: black;
+}
+.restaurant__link__fig {
   width: 335px;
   height: 251px;
   border-radius: 1em;
@@ -94,17 +146,13 @@ i {
   margin: 0 0 18px 0;
   position: relative;
 }
-.restaurant__fig__link {
-  text-decoration: none;
-  color: black;
-}
-.restaurant__fig__link__img {
+.restaurant__link__fig__img {
   width: 335px;
   height: 174px;
   object-fit: cover;
   border-radius: 1em 1em 0 0;
 }
-.restaurant__fig__link__new {
+.restaurant__link__fig__new {
   width: 79px;
   height: 29px;
   background-color: #99e2d0;
@@ -116,6 +164,10 @@ i {
   align-items: center;
   margin: 0;
   border-radius: 2px;
+}
+.restaurant__link__fig__caption {
+  display: flex;
+  flex-direction: row;
 }
 
 /*# sourceMappingURL=style.css.map */
