@@ -1,7 +1,8 @@
 /* variables */
 /* mixin */
 @import url("https://fonts.googleapis.com/css3? family = Roboto:wght@300;400;500;600;700;800;900& display = swap");
-* {
+@import url("https://fonts.googleapis.com/css3? family = Shrikhand:wght@300;400;500;600;700;800;900& display = swap");
+header, footer, .operation, .restaurant {
   font-family: "Roboto", sans-serif;
 }
 
@@ -52,6 +53,10 @@ i {
   height: 28px;
   width: 164px;
 }
+.heading__img {
+  width: 375px;
+  height: 260px;
+}
 .heading__map {
   height: 50px;
 }
@@ -84,6 +89,11 @@ i {
   text-decoration: none;
   border-radius: 2em;
   margin-left: 10px;
+}
+
+.section__title {
+  font-family: "Shrikhand", sans-serif;
+  font-style: italic;
 }
 
 .operation {
@@ -137,6 +147,7 @@ i {
 .restaurant__link {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 .restaurant__link__fig {
   width: 335px;
@@ -168,6 +179,34 @@ i {
 .restaurant__link__fig__caption {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.figcaption__container {
+  margin-left: 20px;
+}
+.figcaption__container__title {
+  margin: 15px 0 7px 0;
+}
+.figcaption__container__byline {
+  margin: 0;
+}
+.figcaption__container2__heart {
+  font-size: 21px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 218px;
+  height: 50px;
+  background-color: #ff79da;
+  color: white;
+  text-decoration: none;
+  border-radius: 2em;
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

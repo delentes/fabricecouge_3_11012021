@@ -45,4 +45,16 @@ $tertiary: #99e2d0;
     border-radius: 1em;
     box-shadow: 2px 2px 2px 2px gray;
 }
+@mixin btn2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 218px;
+    height: 50px;
+    background-color: $secondary;
+    color: white;
+    text-decoration: none;
+    border-radius: 2em;
+    margin-left: 10px;
+}
 
