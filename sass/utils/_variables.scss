@@ -3,6 +3,7 @@
 $primary: #9356dc;
 $secondary: #ff79da;
 $tertiary: #99e2d0;
+$footer-price :#353535;
 
 /* mixin */
 
@@ -10,7 +11,7 @@ $tertiary: #99e2d0;
     width: 335px;
     height: 251px;
     border-radius: 1em;
-    box-shadow: 0 4px gray;
+    box-shadow: 2px 5px 10px #c5c5c5;
     margin: 0 0 18px 0;
     position: relative;
 }
@@ -38,12 +39,13 @@ $tertiary: #99e2d0;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 0 0 25px 10px;
+    padding-left: 34px;
     height: 72px;
     width: 325px;
     border-radius: 1em;
-    box-shadow: 2px 2px 2px 2px gray;
+    box-shadow: 2px 5px 10px #c5c5c5;
 }
 @mixin btn2 {
     display: inline-flex;
@@ -51,10 +53,11 @@ $tertiary: #99e2d0;
     justify-content: center;
     width: 218px;
     height: 50px;
-    background-color: $secondary;
+    background:linear-gradient(to bottom right, $secondary, $primary);
     color: white;
     text-decoration: none;
     border-radius: 2em;
-    margin-left: 10px;
+    margin-left: 8px;
+    box-shadow: 2px 5px 10px  #c5c5c5;
 }
 

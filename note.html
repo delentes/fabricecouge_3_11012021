@@ -3,127 +3,165 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="public/css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-	<title>La note enchantée</title>
+	<title>La palette du goût</title>
 </head>
 <body>
 	<div>
 		<header>
 			<div class="heading__logo">
-				<a href="index.html"><i class="fas fa-arrow-left"></i></a>
+				<a href="index.html"><i class="fas fa-arrow-left heading__arrow"></i></a>
 				<img class="heading__logo--size" src="pictures/ohmyfood.png" alt="logo">
 			</div>
-			<img class="heading__img" src="pictures/note.jpg">
 		</header>
-		<section>
-			<h1>La note enchantée</h1>
-			<article>
-				<h2>ENTR&Eacute;ES</h2>
-				<div>
-					<div>
-						<h3></h3>
-						<p></p>
+		<section class="section">
+			<img class="section__img" src="pictures/note.jpg">
+			<div class="section__container">
+				<h1 class="section__container__title"><strong>La note enchantée</strong></h1>
+				<i class="far fa-heart section__container__heart"></i>
+			</div>
+			<article class="section__article">
+				<h2 class="section__article__title">ENTR&Eacute;ES</h2>
+				<div class="section__article__container">
+					<div class="section__article__container__container2">
+						<h3 class="section__article__container__container2__title">Ravioles de foie gras</h3>
+						<p class="section__article__container__container2__byline">Accompagnés de leur crème à la truffe</p>
 					</div>
-					<div>
-						<p></p>
-						<div><i class="fas fa-check"></i></div>
-					</div>
-				</div>
-				<div>
-					<div>
-						<h3></h3>
-						<p></p>
-					</div>
-					<div>
-						<p></p>
-						<div></div>
+					<div class="section__article__container__container3">
+						<p class="section__article__container__container3__price">25&euro;</p>
+						<div class="section__article__container__container3__check">
+							<i class="fas fa-check"></i>
+						</div>
 					</div>
 				</div>
-				<div>
-					<div>
-						<h3></h3>
-						<p></p>
+				<div class="section__article__container">
+					<div class="section__article__container__container2">
+						<h3 class="section__article__container__container2__title">Caviar osciètre</h3>
+						<p class="section__article__container__container2__byline">Sur blini à la farine de blé noir</p>
 					</div>
-					<div>
-						<p></p>
-						<div></div>
+					<div class="section__article__container__container3">
+						<p class="section__article__container__container3__price">35&euro;</p>
+						<div class="section__article__container__container3__check">
+							<i class="fas fa-check"></i>
+						</div>
+					</div>
+				</div>
+				<div class="section__article__container">
+					<div class="section__article__container__container2">
+						<h3 class="section__article__container__container2__title">Homard et espuma de potiron</h3>
+						<p class="section__article__container__container2__byline">Mariné aux zestes d'orange</p>
+					</div>
+					<div class="section__article__container__container3">
+						<p class="section__article__container__container3__price">20&euro;</p>
+						<div class="section__article__container__container3__check">
+							<i class="fas fa-check"></i>
+						</div>
+					</div>
+				</div>
+				<div class="section__article__container">
+					<div class="section__article__container__container2">
+						<h3 class="section__article__container__container2__title">Foie gras de canard cuit entier</h3>
+						<p class="section__article__container__container2__byline">Confiture de figue et pain toasté</p>
+					</div>
+					<div class="section__article__container__container3">
+						<p class="section__article__container__container3__price">35&euro;</p>
+						<div class="section__article__container__container3__check">
+							<i class="fas fa-check"></i>
+						</div>
 					</div>
 				</div>
 			</article>
-			<article>
+			<article class="section__article">
 				<h2>PLATS</h2>
-				<div>
-					<div>
-						<h3></h3>
-						<p></p>
+				<div class="section__article__container">
+					<div class="section__article__container__container2">
+						<h3 class="section__article__container__container2__title">Noix de coquilles Saint-Jacques</h3>
+						<p class="section__article__container__container2__byline">Sur lit de purée de céleri-rave</p>
 					</div>
-					<div>
-						<p></p>
-						<div></div>
+					<div class="section__article__container__container3">
+						<p class="section__article__container__container3__price">40&euro;</p>
+						<div class="section__article__container__container3__check">
+							<i class="fas fa-check"></i>
+						</div>
+					</div>
+				</div>	
+				<div class="section__article__container">
+					<div class="section__article__container__container2">
+						<h3 class="section__article__container__container2__title">Langoustine poêlée</h3>
+						<p class="section__article__container__container2__byline">Purée de patate douce</p>
+					</div>
+					<div class="section__article__container__container3">							
+						<p class="section__article__container__container3__price">35&euro;</p>							
+						<div class="section__article__container__container3__check">
+							<i class="fas fa-check"></i>
+						</div>
 					</div>
 				</div>
-				<div>
-					<div>
-						<h3></h3>
-						<p></p>
+				<div class="section__article__container">
+					<div class="section__article__container__container2">
+						<h3 class="section__article__container__container2__title">Mijoté de queue de boeuf</h3>
+						<p class="section__article__container__container2__byline">Et riz sauvage aux zestes de citron</p>
 					</div>
-					<div>
-						<p></p>
-						<div></div>
-					</div>
-				</div>
-				<div>
-					<div>
-						<h3></h3>
-						<p></p>
-					</div>
-					<div>
-						<p></p>
-						<div></div>
+					<div class="section__article__container__container3">							
+						<p class="section__article__container__container3__price">44&euro;</p>							
+						<div class="section__article__container__container3__check">
+							<i class="fas fa-check"></i>
+						</div>
 					</div>
 				</div>
 			</article>
-			<article>
+			<article class="section__article">
 				<h2>DESSERTS</h2>
-				<div>
-					<div>
-						<h3></h3>
-						<p></p>
+				<div class="section__article__container">
+					<div class="section__article__container__container2">
+						<h3 class="section__article__container__container2__title">Macaron noisette et chocolat</h3>
+						<p class="section__article__container__container2__byline">Glace au caramel brun et sel de Guérande</p>
 					</div>
-					<div>
-						<p></p>
-						<div></div>
-					</div>
-				</div>
-				<div>
-					<div>
-						<h3></h3>
-						<p></p>
-					</div>
-					<div>
-						<p></p>
-						<div></div>
+					<div class="section__article__container__container3">							
+						<p class="section__article__container__container3__price">18&euro;</p>							
+						<div class="section__article__container__container3__check">
+							<i class="fas fa-check"></i>
+						</div>
 					</div>
 				</div>
-				<div>
-					<div>
-						<h3></h3>
-						<p></p>
+				<div class="section__article__container">
+					<div class="section__article__container__container2">
+						<h3 class="section__article__container__container2__title">Baba au rhum revisité</h3>
+						<p class="section__article__container__container2__byline">Avec son coulis de citron</p>
 					</div>
-					<div>
-						<p></p>
-						<div></div>
+					<div class="section__article__container__container3">							
+						<p class="section__article__container__container3__price">22&euro;</p>							
+						<div class="section__article__container__container3__check">
+							<i class="fas fa-check"></i>
+						</div>
+					</div>
+				</div>
+				<div class="section__article__container">
+					<div class="section__article__container__container2">
+						<h3 class="section__article__container__container2__title">Tarte au citron meringuée</h3>
+						<p class="section__article__container__container2__byline">Déstructurée</p>
+					</div>
+					<div class="section__article__container__container3">							
+						<p class="section__article__container__container3__price">23&euro;</p>							
+						<div class="section__article__container__container3__check">
+							<i class="fas fa-check"></i>
+						</div>
 					</div>
 				</div>
 			</article>
-			<div></div>
+			<div class="section__button">
+				<a class="btn" href="#">Commander</a>
+			</div>
 		</section>
 		<footer class="footer">
 			<img class="footer__logo--size" src="pictures/ohmyfood.png" alt="logo">
 			<a href="#" class="footer__link">
-				<i class="fas fa-utensils"></i>
-				<p class="footer__link__byline">Propser un restaurant</p>
+				<i class="fas fa-utensils footer__link__utensils"></i>
+				<p class="footer__link__byline">Proposer un restaurant</p>
 			</a>
 			<a href="#" class="footer__link">
 				<i class="fas fa-hands-helping footer__link__helping"></i>

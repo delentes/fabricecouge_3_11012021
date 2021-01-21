@@ -4,10 +4,10 @@
     align-items: center;
 }
 @mixin head{
-    height: 63px;
+    height: 58px;
     @extend .layout-heading;
      &--size{
-        height: 28px;
+        height: 29px;
         width: 164px;
     }
 }

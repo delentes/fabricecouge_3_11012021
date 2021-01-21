@@ -1,13 +1,11 @@
 /* variables */
 /* mixin */
-@import url("https://fonts.googleapis.com/css3? family = Roboto& display = swap");
-@import url("https://fonts.googleapis.com/css3? family = Shrikhand& display = swap");
-header, footer, .operation, .restaurant {
+header, footer, .operation, .restaurant, article {
   font-family: "Roboto", sans-serif;
 }
 
 .footer {
-  background-color: gray;
+  background-color: #353535;
   padding-bottom: 37px;
 }
 .footer__logo--size {
@@ -25,8 +23,13 @@ header, footer, .operation, .restaurant {
   color: white;
   align-items: center;
 }
+.footer__link__utensils {
+  font-size: 0.85em;
+  margin-right: 12px;
+}
 .footer__link__helping {
-  font-size: 13px;
+  font-size: 0.75em;
+  margin-right: 8px;
 }
 .footer__link__byline {
   margin: 0;
@@ -42,41 +45,58 @@ body {
   margin: 0;
 }
 
-i {
-  margin-right: 1em;
+.heading {
+  position: relative;
 }
-
+.heading__arrow {
+  position: absolute;
+  left: 23px;
+  top: 27px;
+  color: #353535;
+}
 .heading__logo {
-  height: 63px;
+  height: 58px;
+  padding-top: 5px;
 }
 .heading__logo--size {
-  height: 28px;
+  height: 29px;
   width: 164px;
-}
-.heading__img {
-  width: 375px;
-  height: 260px;
 }
 .heading__map {
   height: 50px;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 3px 2px #cfcfcf;
+  padding-left: 60px;
 }
-.heading__mapsearch {
-  border: 0;
-  -webkit-appearance: none;
+.heading__map__marker {
+  margin-right: 14px;
+  padding-bottom: 6px;
+}
+.heading__map__search {
+  border: none;
+  border-width: 0px;
+  background-color: #eaeaea;
+  font-size: 1em;
+}
+.heading__map__search:focus {
   outline: none;
 }
 .heading__text {
   flex-direction: column;
-  justify-content: center;
   text-align: center;
+  background-color: #f6f6f6;
+  height: 287px;
 }
 .heading__text__title {
   width: 300px;
-  margin-left: 30px;
+  margin: 0 0 20px 35px;
+  padding-top: 38px;
 }
 .heading__text__byline {
-  margin-left: 10px;
-  font-size: 1.1em;
+  margin: 0 0 30px 0;
+  font-weight: 100;
+  font-size: 1.2em;
+  opacity: 0.55;
 }
 .heading__text__btn {
   display: inline-flex;
@@ -84,16 +104,12 @@ i {
   justify-content: center;
   width: 218px;
   height: 50px;
-  background-color: #ff79da;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
   color: white;
   text-decoration: none;
   border-radius: 2em;
-  margin-left: 10px;
-}
-
-.section__title {
-  font-family: "Shrikhand", sans-serif;
-  font-style: italic;
+  margin-left: 8px;
+  box-shadow: 2px 5px 10px #c5c5c5;
 }
 
 .operation {
@@ -112,14 +128,13 @@ i {
   width: 335px;
   display: flex;
   flex-direction: row;
-  justify-self: start;
 }
 .operation__container__container2__number {
   color: white;
   display: flex;
   position: absolute;
-  top: 11px;
-  left: -3px;
+  top: 12px;
+  left: -2px;
   border-radius: 100%;
   background-color: #9356dc;
   width: 24px;
@@ -131,18 +146,33 @@ i {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 0 0 25px 10px;
+  padding-left: 34px;
   height: 72px;
   width: 325px;
   border-radius: 1em;
-  box-shadow: 2px 2px 2px 2px gray;
+  box-shadow: 2px 5px 10px #c5c5c5;
+}
+
+.button--margin1 {
+  margin-right: 29px;
+  opacity: 0.55;
+}
+.button--margin2 {
+  margin-right: 23px;
+  opacity: 0.55;
+}
+.button--margin3 {
+  margin-right: 20px;
+  opacity: 0.55;
 }
 
 .restaurant {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
+  padding-bottom: 46px;
 }
 .restaurant__link {
   text-decoration: none;
@@ -153,7 +183,7 @@ i {
   width: 335px;
   height: 251px;
   border-radius: 1em;
-  box-shadow: 0 4px gray;
+  box-shadow: 2px 5px 10px #c5c5c5;
   margin: 0 0 18px 0;
   position: relative;
 }
@@ -194,6 +224,7 @@ i {
 }
 .figcaption__container2__heart {
   font-size: 21px;
+  margin-right: 14px;
 }
 
 .btn {
@@ -202,11 +233,108 @@ i {
   justify-content: center;
   width: 218px;
   height: 50px;
-  background-color: #ff79da;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
   color: white;
   text-decoration: none;
   border-radius: 2em;
-  margin-left: 10px;
+  margin-left: 8px;
+  box-shadow: 2px 5px 10px #c5c5c5;
+}
+
+.section {
+  position: relative;
+  background-color: #f6f6f6;
+}
+.section__img {
+  height: 255px;
+  width: 100%;
+  object-fit: cover;
+}
+.section__container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  align-items: center;
+  justify-content: space-between;
+  top: 205px;
+  border-radius: 1.5em 1.5em 0 0;
+  background-color: #f6f6f6;
+  width: 100%;
+}
+.section__container__title {
+  font-family: "Shrikhand", sans-serif;
+  padding-left: 19px;
+  margin-bottom: 0;
+}
+.section__container__heart {
+  margin-right: 38px;
+  font-size: 1.5em;
+}
+.section__article {
+  margin-left: 14px;
+}
+.section__article__title {
+  margin-top: 30px;
+  font-size: 1em;
+  font-weight: 100;
+}
+.section__article__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 1em;
+  box-shadow: 2px 5px 10px #c5c5c5;
+  width: 349px;
+  margin-bottom: 14px;
+}
+.section__article__container__container2 {
+  margin-left: 11px;
+}
+.section__article__container__container2__title {
+  width: 275px;
+  margin: 12px 0 0 0;
+}
+.section__article__container__container2__byline {
+  width: 275px;
+  height: 19px;
+  margin: 5px 0 12px 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.section__article__container__container3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  position: relative;
+}
+.section__article__container__container3__price {
+  margin-bottom: 14px;
+  font-weight: bold;
+  margin-right: 22px;
+  color: #353535;
+}
+.section__article__container__container3__check {
+  width: 59px;
+  height: 68px;
+  border-radius: 0 1em 1em 0;
+  background-color: #99e2d0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  margin-left: 0px;
+  position: absolute;
+  left: 50px;
+}
+.section__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
