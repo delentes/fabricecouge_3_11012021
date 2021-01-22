@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* variables */
 /* mixin */
 header, footer, .operation, .restaurant, article {
@@ -35,7 +36,7 @@ header, footer, .operation, .restaurant, article {
   margin: 0;
 }
 
-.layout-heading, .heading__map, .heading__logo {
+.layout-heading, .presentation__map, .heading__logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,6 +44,7 @@ header, footer, .operation, .restaurant, article {
 
 body {
   margin: 0;
+  width: 100%;
 }
 
 .heading {
@@ -51,8 +53,9 @@ body {
 .heading__arrow {
   position: absolute;
   left: 23px;
-  top: 27px;
+  top: 25px;
   color: #353535;
+  font-size: 1.1em;
 }
 .heading__logo {
   height: 58px;
@@ -62,43 +65,44 @@ body {
   height: 29px;
   width: 164px;
 }
-.heading__map {
+
+.presentation__map {
   height: 50px;
   background-color: #eaeaea;
   box-shadow: inset 0px 3px 2px #cfcfcf;
   padding-left: 60px;
 }
-.heading__map__marker {
+.presentation__map__marker {
   margin-right: 14px;
   padding-bottom: 6px;
 }
-.heading__map__search {
+.presentation__map__search {
   border: none;
   border-width: 0px;
   background-color: #eaeaea;
   font-size: 1em;
 }
-.heading__map__search:focus {
+.presentation__map__search:focus {
   outline: none;
 }
-.heading__text {
+.presentation__text {
   flex-direction: column;
   text-align: center;
   background-color: #f6f6f6;
   height: 287px;
 }
-.heading__text__title {
+.presentation__text__title {
   width: 300px;
   margin: 0 0 20px 35px;
   padding-top: 38px;
 }
-.heading__text__byline {
+.presentation__text__byline {
   margin: 0 0 30px 0;
   font-weight: 100;
   font-size: 1.2em;
   opacity: 0.55;
 }
-.heading__text__btn {
+.presentation__text__btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -133,7 +137,7 @@ body {
   color: white;
   display: flex;
   position: absolute;
-  top: 12px;
+  top: 8px;
   left: -2px;
   border-radius: 100%;
   background-color: #9356dc;
@@ -141,6 +145,7 @@ body {
   height: 24px;
   justify-content: center;
   align-items: center;
+  opacity: 1;
 }
 .operation__container__container2__button {
   display: flex;
@@ -154,18 +159,30 @@ body {
   border-radius: 1em;
   box-shadow: 2px 5px 10px #c5c5c5;
 }
-
-.button--margin1 {
+.operation__container__container2__button--margin1 {
   margin-right: 29px;
   opacity: 0.55;
 }
-.button--margin2 {
+.operation__container__container2__button--margin2 {
   margin-right: 23px;
   opacity: 0.55;
 }
-.button--margin3 {
+.operation__container__container2__button2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 0 25px 10px;
+  padding-left: 34px;
+  height: 72px;
+  width: 325px;
+  border-radius: 1em;
+  box-shadow: 2px 5px 10px #c5c5c5;
+  background-color: #f7f2fc;
+}
+.operation__container__container2__button2--margin3 {
   margin-right: 20px;
-  opacity: 0.55;
+  color: #9356dc;
 }
 
 .restaurant {
@@ -198,13 +215,14 @@ body {
   height: 29px;
   background-color: #99e2d0;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 13px;
+  right: 11px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
   border-radius: 2px;
+  color: #2c9c81;
 }
 .restaurant__link__fig__caption {
   display: flex;
@@ -265,10 +283,11 @@ body {
   font-family: "Shrikhand", sans-serif;
   padding-left: 19px;
   margin-bottom: 0;
+  font-size: 1.8em;
 }
 .section__container__heart {
-  margin-right: 38px;
-  font-size: 1.5em;
+  margin: 20px 38px 0 0;
+  font-size: 1.7em;
 }
 .section__article {
   margin-left: 14px;
@@ -277,6 +296,9 @@ body {
   margin-top: 30px;
   font-size: 1em;
   font-weight: 100;
+  width: 40px;
+  border-bottom: 3px solid #99e2d0;
+  padding-bottom: 6px;
 }
 .section__article__container {
   display: flex;
@@ -315,9 +337,9 @@ body {
   margin-right: 22px;
   color: #353535;
 }
-.section__article__container__container3__check {
+.section__article__container__container3__checkbox {
   width: 59px;
-  height: 68px;
+  height: 100%;
   border-radius: 0 1em 1em 0;
   background-color: #99e2d0;
   color: white;
@@ -335,6 +357,30 @@ body {
   align-items: center;
   height: 140px;
   width: 100%;
+}
+
+.fa-heart {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.fa-heart:hover::after {
+  opacity: 1;
+}
+.fa-heart::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms ease-out;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

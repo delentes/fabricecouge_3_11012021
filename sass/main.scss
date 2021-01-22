@@ -4,19 +4,23 @@
 @import "layouts/heading";
 body{
     margin: 0;
+    width: 100%;
 }
 .heading{
     position: relative;
     &__arrow{
         position: absolute;
         left: 23px;
-        top: 27px;
+        top: 25px;
         color: $footer-price;
+        font-size: 1.1em;
     }
     &__logo{
         @include head;
         padding-top: 5px; 
     }
+}
+.presentation{
     &__map{
         height: 50px;
         background-color: #eaeaea;
@@ -76,7 +80,7 @@ body{
                 color: white;
                 display: flex;
                 position: absolute;
-                top: 12px;
+                top: 8px;
                 left: -2px;
                 border-radius: 100%;
                 background-color: $primary;
@@ -84,25 +88,28 @@ body{
                 height: 24px;
                 justify-content: center;
                 align-items: center;
+                opacity: 1;
             }
             &__button{
                 @include btn;
+                &--margin1{
+                    margin-right: 29px;
+                    opacity: 0.55;
+                }
+                &--margin2{
+                    margin-right: 23px;
+                    opacity: 0.55;
+                }
+            }
+            &__button2{
+                @include btn;
+                background-color: lighten($color: $primary, $amount: 37%);
+                &--margin3{
+                    margin-right: 20px;
+                    color: $primary;
+                } 
             }
         }
-    }
-}
-.button{
-    &--margin1{
-        margin-right: 29px;
-        opacity: 0.55;
-    }
-    &--margin2{
-        margin-right: 23px;
-        opacity: 0.55;
-    }
-    &--margin3{
-        margin-right: 20px;
-        opacity: 0.55;
     }
 }
 .restaurant{
@@ -174,10 +181,11 @@ body{
             font-family:'Shrikhand' , sans-serif;
             padding-left: 19px;
             margin-bottom: 0;
+            font-size: 1.8em;
         }
         &__heart{
-            margin-right: 38px;
-            font-size: 1.5em;
+            margin:20px 38px 0 0;
+            font-size: 1.7em;
         }
     }
     &__article{
@@ -186,6 +194,9 @@ body{
             margin-top: 30px;
             font-size: 1em;
             font-weight: 100;
+            width: 40px;
+            border-bottom: 3px solid $tertiary;
+            padding-bottom: 6px;
         }
         &__container{
             display: flex;
@@ -222,9 +233,9 @@ body{
                     margin-right: 22px;
                     color: $footer-price;
                 }
-                &__check{
+                &__checkbox{
                     width: 59px;
-                    height: 68px;
+                    height: 100%;
                     border-radius: 0 1em 1em 0;
                     background-color: $tertiary;
                     color: white;
@@ -245,5 +256,30 @@ body{
         align-items: center;
         height: 140px;
         width: 100%;
+    }
+}
+.fa-heart{
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    &:hover{
+        &::after{
+            opacity: 1;
+        }
+    }
+    &::after{
+        content: "\f004";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: -webkit-linear-gradient($primary,$secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms ease-out;
+        font-weight: bold;
     }
 }
