@@ -184,14 +184,15 @@ body{
             font-size: 1.8em;
         }
         &__heart{
-            margin:20px 38px 0 0;
+            margin:20px 36px 0 0;
             font-size: 1.7em;
         }
     }
     &__article{
         margin-left: 14px;
+        width: 93%;
         &__title{
-            margin-top: 30px;
+            margin:30px 0 14px 7px;
             font-size: 1em;
             font-weight: 100;
             width: 40px;
@@ -201,20 +202,49 @@ body{
         &__container{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: center;
             background-color: white;
             border-radius: 1em;
             box-shadow: 2px 5px 10px #c5c5c5;
-            width: 349px;
+            width: 100%;
             margin-bottom: 14px;
+            cursor: pointer;
+            opacity: 0;
+            animation: menu-opacity $anim-duration forwards;
+            @for $i from 1 through $num-container{
+                &--#{$i} {
+                    animation-delay: $anim-delay * $i;
+                }
+            }
+            &:hover &__container2__title {
+                width: 80%;
+            }
+            &:hover &__container2__byline{
+                width: 80%;
+            }
+            &:hover &__container3{
+                transform: translateX(-59px);
+                transition: transform 350ms;
+            }
+            &:hover &__container3__checkbox{
+                opacity: 1;
+                transition: opacity 350ms;
+            }
+            &:hover &__container3__checkbox__check{
+                transform: rotate(-360deg);
+                transition: transform 350ms;
+                transition-delay:200ms;
+            }
             &__container2{
+                width: 83.1%;
                 margin-left: 11px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
                 &__title{
-                    width: 275px;
                     margin: 12px 0 0 0;
                 }
                 &__byline{
-                    width: 275px;
                     height: 19px;
                     margin:5px 0 12px 0;
                     text-overflow: ellipsis;
@@ -223,29 +253,35 @@ body{
                 }
             }
             &__container3{
+                width: 13.7%;
                 display: flex;
                 flex-direction: row;
                 align-items: flex-end;
                 position: relative;
+                z-index: 1;
                 &__price{
+                    background-color: white;
+                    border-radius: 0 1em 1em 0;
                     margin-bottom: 14px;
                     font-weight: bold;
-                    margin-right: 22px;
+                    padding-right: 21px;
                     color: $footer-price;
                 }
                 &__checkbox{
-                    width: 59px;
+                    padding: 0 20px 0 19px;
                     height: 100%;
                     border-radius: 0 1em 1em 0;
                     background-color: $tertiary;
-                    color: white;
+                    color: $tertiary;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     opacity: 0;
-                    margin-left: 0px;
-                    position: absolute;
-                    left: 50px;
+                    &__check{
+                        border-radius: 100%;
+                        border: 2px solid white;
+                        background-color: white;
+                    }
                 }
             }
         }
@@ -256,6 +292,14 @@ body{
         align-items: center;
         height: 140px;
         width: 100%;
+        }
+}
+@keyframes menu-opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 .fa-heart{
@@ -274,12 +318,22 @@ body{
         right: 0;
         bottom: 0;
         left: 0;
-        background: -webkit-linear-gradient($primary,$secondary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         opacity: 0;
         z-index: -1;
-        transition: opacity 250ms ease-out;
         font-weight: bold;
+        transition: opacity 250ms ease-in-out;
+        color:$primary;
+    }
+}
+@media screen and (max-width:2000px){
+    header{
+        width: 375px;
+        justify-content: center;
+    }
+    .section{
+        width: 375px;
+    }
+    footer{
+        width: 375px;
     }
 }

@@ -4,9 +4,13 @@ $primary: #9356dc;
 $secondary: #ff79da;
 $tertiary: #99e2d0;
 $footer-price :#353535;
+$anim-duration: 1500ms;
+$num-container: 10;
+$anim-delay: $anim-duration / $num-container;
+
+
 
 /* mixin */
-
 @mixin index-thumbnail{
     width: 335px;
     height: 251px;
@@ -60,5 +64,26 @@ $footer-price :#353535;
     border-radius: 2em;
     margin-left: 8px;
     box-shadow: 2px 5px 10px  #c5c5c5;
+    position: relative;
+    z-index: 1;
+    &:hover{
+        &::after{
+            opacity: 1;
+        }
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms ease-in-out;
+        background:linear-gradient(to bottom right,lighten($secondary,5%),lighten($primary,5%));
+        box-shadow: 2px 5px 10px darken($color: #c5c5c5, $amount: 5%);
+        border-radius: 2em;
+    }
 }
 
