@@ -36,17 +36,6 @@ header, footer, .operation, .restaurant, article {
   margin: 0;
 }
 
-.layout-heading, .presentation__map, .heading__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-body {
-  margin: 0;
-  width: 100%;
-}
-
 .heading {
   position: relative;
 }
@@ -59,6 +48,9 @@ body {
 }
 .heading__logo {
   height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 5px;
 }
 .heading__logo--size {
@@ -66,11 +58,24 @@ body {
   width: 164px;
 }
 
+body {
+  margin: 0;
+  width: 100%;
+}
+
 .presentation__map {
   height: 50px;
   background-color: #eaeaea;
   box-shadow: inset 0px 3px 2px #cfcfcf;
   padding-left: 60px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.presentation__map--size {
+  height: 29px;
+  width: 164px;
 }
 .presentation__map__marker {
   margin-right: 14px;
@@ -88,12 +93,15 @@ body {
 .presentation__text {
   flex-direction: column;
   text-align: center;
+  justify-content: center;
   background-color: #f6f6f6;
   height: 287px;
 }
 .presentation__text__title {
-  width: 300px;
-  margin: 0 0 20px 35px;
+  display: flex;
+  justify-content: center;
+  width: 61.1%;
+  margin: 0 0 20px 19.45%;
   padding-top: 38px;
 }
 .presentation__text__byline {
@@ -148,7 +156,7 @@ body {
 }
 .operation__container__container2 {
   position: relative;
-  width: 335px;
+  width: 89.3%;
   display: flex;
   flex-direction: row;
 }
@@ -211,12 +219,13 @@ body {
   padding-bottom: 46px;
 }
 .restaurant__link {
+  justify-content: center;
   text-decoration: none;
   color: black;
   cursor: pointer;
 }
 .restaurant__link__fig {
-  width: 335px;
+  width: 94.4%;
   height: 251px;
   border-radius: 1em;
   box-shadow: 2px 5px 10px #c5c5c5;
@@ -224,7 +233,7 @@ body {
   position: relative;
 }
 .restaurant__link__fig__img {
-  width: 335px;
+  width: 100%;
   height: 174px;
   object-fit: cover;
   border-radius: 1em 1em 0 0;
@@ -489,17 +498,22 @@ body {
 }
 
 @media screen and (max-width: 2000px) {
-  header {
-    width: 375px;
+  body {
+    display: flex;
     justify-content: center;
   }
 
-  .section {
-    width: 375px;
+  header {
+    justify-content: center;
+  }
+
+  section {
+    justify-content: center;
   }
 
   footer {
     width: 375px;
+    justify-content: center;
   }
 }
 

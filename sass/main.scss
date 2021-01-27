@@ -6,27 +6,13 @@ body{
     margin: 0;
     width: 100%;
 }
-.heading{
-    position: relative;
-    &__arrow{
-        position: absolute;
-        left: 23px;
-        top: 25px;
-        color: $footer-price;
-        font-size: 1.1em;
-    }
-    &__logo{
-        @include head;
-        padding-top: 5px; 
-    }
-}
 .presentation{
     &__map{
         height: 50px;
         background-color: #eaeaea;
         box-shadow:inset 0px 3px 2px #cfcfcf;
         padding-left: 60px;
-        @extend .layout-heading;
+        @include head;
         &__marker{
             margin-right: 14px;
             padding-bottom: 6px;
@@ -44,11 +30,14 @@ body{
     &__text{
         flex-direction: column;
         text-align: center;
+        justify-content: center;
         background-color: #f6f6f6;
         height: 287px;
         &__title{
-            width: 300px;
-            margin:0 0 20px 35px;
+            display: flex;
+            justify-content: center;
+            width: 61.1%;
+            margin:0 0 20px 19.45%;
             padding-top: 38px;
         }
         &__byline{
@@ -73,7 +62,7 @@ body{
         justify-content: space-around;
         &__container2{
             position: relative;
-            width: 335px;
+            width: 89.3%;
             display: flex;
             flex-direction: row;
             &__number{
@@ -118,6 +107,7 @@ body{
     margin-left: 20px;
     padding-bottom: 46px;
     &__link{
+        justify-content: center;
         text-decoration: none;
         color: black;
         cursor: pointer;
@@ -326,14 +316,19 @@ body{
     }
 }
 @media screen and (max-width:2000px){
-    header{
-        width: 375px;
+    body{
+        display: flex;
         justify-content: center;
     }
-    .section{
-        width: 375px;
+    header{
+        justify-content: center;
+    }
+    section{
+
+        justify-content: center;
     }
     footer{
         width: 375px;
+        justify-content: center;
     }
 }
