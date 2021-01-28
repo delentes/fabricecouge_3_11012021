@@ -101,36 +101,39 @@ body{
     flex-direction: column;
     margin-left: 20px;
     padding-bottom: 46px;
-    &__link{
-        text-decoration: none;
-        color: black;
-        cursor: pointer;
-        &__fig{
-            @include index-thumbnail;
-            &__img{
-                @include index-picture;
-            }
-            &__new{
-                @include new;
-            }
-            &__figcaption{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
-                &__container{
-                    margin-left: 20px;
-                    &__title{
-                        margin: 15px 0 7px 0;
-                    }
-                    &__byline{
-                        margin: 0;
-                    }
+    &__container{
+        &__link{
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+            &__fig{
+                @include index-thumbnail;
+                &__img{
+                    @include index-picture;
                 }
-                &__container2{
-                    &__heart{
-                        font-size: 21px;
-                        margin-right: 14px;                        
+                &__new{
+                    @include new;
+                }
+                &__figcaption{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    &__container{
+                        margin-left: 20px;
+                        &__title{
+                            margin: 15px 0 7px 0;
+                        }
+                        &__byline{
+                            margin: 0;
+                        }
+                    }
+                    &__container2{
+                        &__heart{
+                            @include full-hearth;
+                            font-size: 21px;
+                            margin-right: 14px;                        
+                        }
                     }
                 }
             }
@@ -165,6 +168,7 @@ body{
         &__heart{
             margin:20px 36px 0 0;
             font-size: 1.7em;
+            @include full-hearth;
         }
     }
     &__article{
@@ -187,6 +191,7 @@ body{
             width: 100%;
             margin-bottom: 14px;
             cursor: pointer;
+            opacity: 0;
             animation: menu-opacity $anim-duration forwards;
             @for $i from 1 through $num-container{
                 &--#{$i} {
@@ -200,7 +205,7 @@ body{
                 width: 80%;
             }
             &:hover &__container3{
-                transform: translateX(-59px);
+                transform: translateX(-58px);
                 transition: transform 350ms;
             }
             &:hover &__container3__checkbox{
@@ -278,41 +283,168 @@ body{
         opacity: 1;
     }
 }
-.fa-heart{
-    position: relative;
-    z-index: 1;
-    cursor: pointer;
-    &:hover{
-        &::after{
-            opacity: 1;
+@media screen and (min-width:1300px){
+        body{
+            background:linear-gradient(to left ,$secondary 0%,$tertiary 30%,$back-sec 50%,$tertiary 70%,$secondary 100%,);
+        }
+        header{
+            justify-content: center;
+        }
+        .presentation{
+            &__map{
+                background-color: transparent;
+                box-shadow: none;
+                width: 16%;
+                margin-left: 42%;
+                padding-left: 30px;
+                &__search{
+                    background-color: transparent;
+                }
+            }
+            &__text{
+                background-color: transparent;
+                &__btn{
+                    margin-top: 40px;
+                }
+            }
+        }
+        .operation{
+            margin: 0;
+            &__title{
+                text-align: center;
+            }
+            &__container{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin: 0px 70px;
+                &__container2{
+                    width: 25%;
+                    margin-left: 40px;
+                    &__button{
+                        background-color: $back-sec;
+                    }
+                }
+            }
+        }
+        .restaurant{
+            &__title{
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            &__container{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                width: 100%;
+                &__link{
+                    width: 35%;
+                    margin-bottom: 40px;
+                    &__fig{
+                        background-color: $back-sec;
+                    }
+                }
+            }
+        }
+        .footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 0;
+            &__logo{
+                width: 150px;
+                height: 30px;
+            }
+            &__container{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
         }
     }
-    &::after{
-        content: "\f004";
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        z-index: -1;
-        font-weight: bold;
-        transition: opacity 250ms ease-in-out;
-        color:$primary;
-    }
-}
-@media screen and (max-width:2000px){
+
+@media screen and (min-width:768px) and (max-width:1290px) {
     body{
-        display: flex;
-        justify-content: center;
+        background:linear-gradient(to left ,$secondary 0%,$tertiary 30%,$back-sec 50%,$tertiary 70%,$secondary 100%,);
     }
     header{
         justify-content: center;
     }
-    section{
-
-        justify-content: center;
+    .presentation{
+        &__map{
+            background-color: transparent;
+            box-shadow: none;
+            width: 16%;
+            margin-left: 42%;
+            padding-left: 30px;
+            &__search{
+                background-color: transparent;
+            }
+        }
+        &__text{
+            background-color: transparent;
+            &__btn{
+                margin-top: 40px;
+            }
+        }
     }
-    footer{
-        width: 375px;
-        justify-content: center;
+    .operation{
+        margin: 0;
+        &__title{
+            text-align: center;
+        }
+        &__container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0px 70px;
+            &__container2{
+                width: 45%;
+                margin-left: 29%;
+                &__button{
+                    background-color: $back-sec;
+                }
+            }
+        }
+    }
+    .restaurant{
+        &__title{
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        &__container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 100%;
+            &__link{
+                width: 35%;
+                margin-bottom: 40px;
+                &__fig{
+                    background-color: $back-sec;
+                }
+            }
+        }
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        &__logo{
+            width: 150px;
+            height: 30px;
+        }
+        &__container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+    .section{
+        width: 50%;
+        margin:0% 25%;
     }
 }

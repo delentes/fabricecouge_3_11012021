@@ -9,11 +9,8 @@
     }
 }
 .heading{
-    position: relative;
     &__arrow{
-        position: absolute;
-        left: 23px;
-        top: 25px;
+        transform: translateX(-64px);
         color: $footer-price;
         font-size: 1.1em;
     }
