@@ -60,7 +60,6 @@ header, footer, .operation, .restaurant, article {
 
 body {
   margin: 0;
-  width: 100%;
 }
 
 .presentation__map {
@@ -150,9 +149,7 @@ body {
   margin-bottom: 30px;
 }
 .operation__container {
-  display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 .operation__container__container2 {
   position: relative;
@@ -172,7 +169,6 @@ body {
   height: 24px;
   justify-content: center;
   align-items: center;
-  opacity: 1;
 }
 .operation__container__container2__button {
   display: flex;
@@ -213,13 +209,11 @@ body {
 }
 
 .restaurant {
-  display: flex;
   flex-direction: column;
   margin-left: 20px;
   padding-bottom: 46px;
 }
 .restaurant__link {
-  justify-content: center;
   text-decoration: none;
   color: black;
   cursor: pointer;
@@ -252,63 +246,30 @@ body {
   border-radius: 2px;
   color: #2c9c81;
 }
-.restaurant__link__fig__caption {
+.restaurant__link__fig__figcaption {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-
-.figcaption__container {
+.restaurant__link__fig__figcaption__container {
   margin-left: 20px;
 }
-.figcaption__container__title {
+.restaurant__link__fig__figcaption__container__title {
   margin: 15px 0 7px 0;
 }
-.figcaption__container__byline {
+.restaurant__link__fig__figcaption__container__byline {
   margin: 0;
 }
-.figcaption__container2__heart {
+.restaurant__link__fig__figcaption__container2__heart {
   font-size: 21px;
   margin-right: 14px;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 218px;
-  height: 50px;
-  background: linear-gradient(to bottom right, #ff79da, #9356dc);
-  color: white;
-  text-decoration: none;
-  border-radius: 2em;
-  margin-left: 8px;
-  box-shadow: 2px 5px 10px #c5c5c5;
-  position: relative;
-  z-index: 1;
-}
-.btn:hover::after {
-  opacity: 1;
-}
-.btn::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 250ms ease-in-out;
-  background: linear-gradient(to bottom right, #ff93e1, #a16be0);
-  box-shadow: 2px 5px 10px #b8b8b8;
-  border-radius: 2em;
 }
 
 .section {
   position: relative;
   background-color: #f6f6f6;
+  width: 375px;
 }
 .section__img {
   height: 255px;
@@ -351,14 +312,12 @@ body {
 .section__article__container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   background-color: white;
   border-radius: 1em;
   box-shadow: 2px 5px 10px #c5c5c5;
   width: 100%;
   margin-bottom: 14px;
   cursor: pointer;
-  opacity: 0;
   animation: menu-opacity 1500ms forwards;
 }
 .section__article__container--1 {
@@ -413,9 +372,7 @@ body {
 .section__article__container__container2 {
   width: 83.1%;
   margin-left: 11px;
-  display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 .section__article__container__container2__title {
   margin: 12px 0 0 0;
@@ -430,7 +387,6 @@ body {
 .section__article__container__container3 {
   width: 13.7%;
   display: flex;
-  flex-direction: row;
   align-items: flex-end;
   position: relative;
   z-index: 1;
@@ -451,7 +407,6 @@ body {
   color: #99e2d0;
   display: flex;
   align-items: center;
-  justify-content: center;
   opacity: 0;
 }
 .section__article__container__container3__checkbox__check {
@@ -465,6 +420,38 @@ body {
   align-items: center;
   height: 140px;
   width: 100%;
+}
+.section__button__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 218px;
+  height: 50px;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  color: white;
+  text-decoration: none;
+  border-radius: 2em;
+  margin-left: 8px;
+  box-shadow: 2px 5px 10px #c5c5c5;
+  position: relative;
+  z-index: 1;
+}
+.section__button__btn:hover::after {
+  opacity: 1;
+}
+.section__button__btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms ease-in-out;
+  background: linear-gradient(to bottom right, #ff93e1, #a16be0);
+  box-shadow: 2px 5px 10px #b8b8b8;
+  border-radius: 2em;
 }
 
 @keyframes menu-opacity {
@@ -487,8 +474,6 @@ body {
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
   opacity: 0;
   z-index: -1;
