@@ -58,8 +58,7 @@ body {
 }
 
 .loader {
-  opacity: 0;
-  transition: display none, delay 3s;
+  animation: loader 10ms ease-out 3000ms forwards;
   position: relative;
   display: flex;
   justify-content: center;
@@ -73,7 +72,7 @@ body {
   font-family: "Shrikhand", sans-serif;
   color: #9356dc;
   margin: 0;
-  animation: title 1s ease-in-out 1.1s forwards;
+  animation: title 1s ease-in 1.1s forwards;
 }
 .loader__container__container2 {
   display: flex;
@@ -99,7 +98,6 @@ body {
   border-top-color: #99e2d0;
   border-bottom-color: #99e2d0;
   animation: spin 0.5s linear infinite;
-  animation-timing-function: 3s;
 }
 .loader__container__container2__spinner::before {
   content: "";
@@ -110,10 +108,9 @@ body {
   right: 5px;
   border-radius: 100%;
   border: 15px solid transparent;
-  border-top-color: #99e2d0;
-  border-bottom-color: #99e2d0;
+  border-top-color: #ff79da;
+  border-bottom-color: #ff79da;
   animation: spin 1s linear infinite;
-  animation-timing-function: 3s;
 }
 .loader__container__container2__utensils {
   color: #353535;
@@ -150,14 +147,30 @@ body {
     transform: scale(1);
   }
   50% {
-    transform: scale(0.5);
+    transform: scale(0.3);
   }
   100% {
     transform: scale(2);
   }
 }
+@keyframes loader {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(9999px);
+  }
+}
+@keyframes page-visibility {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 .page {
-  opacity: 1;
+  animation: page-visibility 10ms ease-in 3000ms both;
 }
 
 .presentation__map {
@@ -377,7 +390,7 @@ body {
   opacity: 0;
   z-index: -1;
   font-weight: bold;
-  transition: opacity 250ms ease-in-out;
+  transition: opacity 150ms ease-in-out;
   color: #9356dc;
 }
 
@@ -426,7 +439,7 @@ body {
   opacity: 0;
   z-index: -1;
   font-weight: bold;
-  transition: opacity 250ms ease-in-out;
+  transition: opacity 150ms ease-in-out;
   color: #9356dc;
 }
 .section__menu__article {
@@ -542,15 +555,15 @@ body {
   height: 100%;
   border-radius: 0 1em 1em 0;
   background-color: #99e2d0;
-  color: #99e2d0;
   display: flex;
   align-items: center;
   opacity: 0;
 }
 .section__menu__article__container__container3__checkbox__check {
   border-radius: 100%;
-  border: 2px solid white;
   background-color: white;
+  color: #99e2d0;
+  padding: 1.5px;
 }
 .section__button {
   display: flex;
