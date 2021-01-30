@@ -1,0 +1,141 @@
+.section{
+    position: relative;
+    background-color: $back-sec;
+    width: 375px;
+    &__img{
+        height: 255px;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__container{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        align-items: center;
+        justify-content: space-between;
+        top: 205px;
+        border-radius: 1.5em 1.5em 0 0;
+        background-color: $back-sec;
+        width: 100%;
+        &__title{
+            font-family:'Shrikhand' , sans-serif;
+            padding-left: 19px;
+            margin-bottom: 0;
+            font-size: 1.8em;
+        }
+        &__heart{
+            margin:20px 36px 0 0;
+            font-size: 1.7em;
+            @include full-hearth;
+        }
+    }
+    &__menu__article{
+        margin-left: 14px;
+        width: 93%;
+        &__title{
+            margin:30px 0 14px 7px;
+            font-size: 1em;
+            font-weight: 100;
+            width: 40px;
+            border-bottom: 3px solid $tertiary;
+            padding-bottom: 6px;
+        }
+        &__container{
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            border-radius: 1em;
+            box-shadow: 2px 5px 10px #c5c5c5;
+            width: 349px;
+            margin-bottom: 14px;
+            cursor: pointer;
+            opacity: 0;
+            animation: menu-opacity $anim-duration forwards;
+            @for $i from 1 through $num-container{
+                &--#{$i} {
+                    animation-delay: $anim-delay * $i;
+                }
+            }
+            &:hover &__container2__title {
+                transition: 350ms;
+                width: 232px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            &:hover &__container2__byline{
+                transition: 350ms;
+                width: 232px;
+            }
+            &:hover &__container3{
+                transform: translateX(1px);
+                transition: transform 350ms;
+            }
+            &:hover &__container3__checkbox{
+                opacity: 1;
+                transition: opacity 350ms;
+            }
+            &:hover &__container3__checkbox__check{
+                transform: rotate(-360deg);
+                transition: transform 350ms;
+                transition-delay:200ms;
+            }
+            &__container2{
+                width: 290px;
+                margin-left: 11px;
+                flex-direction: column;
+                &__title{
+                    width: 290px;
+                    margin: 12px 0 0 0;
+                }
+                &__byline{
+                    width: 290px;
+                    height: 19px;
+                    margin:5px 0 12px 0;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+            }
+            &__container3{
+                width: 124px;
+                display: flex;
+                align-items: flex-end;
+                &__price{
+                    background-color: white;
+                    border-radius: 0 1em 1em 0;
+                    margin-bottom: 14px;
+                    font-weight: bold;
+                    padding-right: 21px;
+                    color: $footer-price;
+                }
+                &__checkbox{
+                    padding: 0 20px 0 19px;
+                    height: 100%;
+                    border-radius: 0 1em 1em 0;
+                    background-color: $tertiary;
+                    
+                    display: flex;
+                    align-items: center;
+                    opacity: 0;
+                    &__check{
+                        border-radius: 100%;
+                        background-color: white;
+                        color: $tertiary;
+                        padding: 1.5px;
+                    }
+                }
+            }
+        }
+    }
+    &__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 140px;
+        width: 100%;
+        &__btn{
+            @include btn2;
+        }
+    }
+}

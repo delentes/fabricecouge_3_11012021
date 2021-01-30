@@ -1,0 +1,114 @@
+@media screen and (min-width:1300px){
+    body{
+        background:linear-gradient(to left ,$secondary 0%,$tertiary 30%,$back-sec 50%,$tertiary 70%,$secondary 100%,);
+    }
+    .heading__logo{
+        margin: 20px 0;
+        &--size{
+            width: 246px;
+            height: 43px;
+        }
+    }
+    .presentation{
+        &__map{
+            background-color: transparent;
+            box-shadow: none;
+            width: 16%;
+            margin-left: 42%;
+            padding-left: 30px;
+            &__search{
+                background-color: transparent;
+            }
+        }
+        &__text{
+            background-color: transparent;
+            &__btn{
+                margin-top: 40px;
+            }
+        }
+    }
+    .operation{
+        margin: 0;
+        &__title{
+            text-align: center;
+        }
+        &__container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 0px 11%;
+            &__container2{
+                width: 25%;
+                &__button{
+                    background-color: $back-sec;
+                }
+            }
+        }
+    }
+    .restaurant{
+        margin-left: 0;
+        &__title{
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        &__container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 100%;
+            &__link{
+                width: 35%;
+                margin:0 0 40px 35px;
+                &__fig{
+                    height: 297px;
+                    background-color: $back-sec;
+                    &__img{
+                        height: 220px;
+                    }
+                }
+            }
+        }
+    }
+    .section{
+        width: 100%;
+        background-color: transparent;
+        &__img{
+            width: 50%;
+            margin-left: 25%;
+            border-radius: 1em;
+        }
+        &__container{
+            width: 50%;
+            margin-left: 25%;
+            border-radius: 0 0 1em 1em;
+        }
+        &__menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 40px;
+            &__article{
+                width: 349px;
+                &__title{
+                    border-color: $primary;
+                }
+            }
+        }
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        &__logo{
+            width: 150px;
+            height: 30px;
+        }
+        &__container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+}
