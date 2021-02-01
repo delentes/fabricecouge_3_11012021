@@ -15,7 +15,7 @@
 }
 @keyframes loader {
     0%{ transform:translateX(0px);}
-    100% {transform: translateX(9999px);}
+    100% {transform: translateX(-9999px);}
 }
 @keyframes page-visibility{
     0%{ transform: translateX(-9999px);}
