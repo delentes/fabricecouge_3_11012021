@@ -825,6 +825,7 @@ body {
   .section__menu {
     padding-top: 40px;
   }
+
   .footer {
     display: flex;
     flex-direction: column;
