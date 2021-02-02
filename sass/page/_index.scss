@@ -4,6 +4,7 @@ body{
 .page{
     animation: page-visibility 10ms ease-in 3000ms both ;
     height: 100%;
+    overflow-y:inherit;
 }
 .presentation{
     &__map{

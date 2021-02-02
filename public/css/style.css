@@ -118,6 +118,7 @@ body {
 .page {
   animation: page-visibility 10ms ease-in 3000ms both;
   height: 100%;
+  overflow-y: inherit;
 }
 
 .presentation__map {
@@ -578,7 +579,8 @@ body {
   border-radius: 100%;
   background-color: white;
   color: #99e2d0;
-  padding: 1.5px;
+  font-size: 0.9em;
+  padding: 3px;
 }
 .section__button {
   display: flex;
@@ -718,7 +720,7 @@ body {
     margin-top: 40px;
   }
   .section__menu__article {
-    width: 349px;
+    width: 30%;
   }
   .section__menu__article__title {
     border-color: #9356dc;
