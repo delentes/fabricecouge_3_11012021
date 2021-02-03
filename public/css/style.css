@@ -722,9 +722,6 @@ body {
   .section__menu__article {
     width: 30%;
   }
-  .section__menu__article__title {
-    border-color: #9356dc;
-  }
 
   .footer {
     display: flex;
