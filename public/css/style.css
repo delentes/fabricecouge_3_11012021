@@ -316,6 +316,7 @@ body {
 }
 .restaurant__container__link__fig__figcaption__container__title {
   margin: 15px 0 7px 0;
+  font-size: 1em;
 }
 .restaurant__container__link__fig__figcaption__container__byline {
   margin: 0;
