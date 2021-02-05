@@ -140,6 +140,7 @@ body {
   border-width: 0px;
   background-color: #eaeaea;
   font-size: 1em;
+  cursor: pointer;
 }
 .presentation__map__search:focus {
   outline: none;
