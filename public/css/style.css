@@ -11,13 +11,13 @@
 }
 @keyframes utensils {
   0% {
-    transform: translateX(9999px);
+    transform: translateX(100px);
   }
   33% {
     transform: translateX(0px);
   }
   66% {
-    transform: translateY(-23px);
+    transform: translateY(-28px);
   }
   100% {
     transform: translateY(0px);
@@ -36,18 +36,18 @@
 }
 @keyframes loader {
   0% {
-    transform: translateX(0px);
+    opacity: 1;
   }
   100% {
-    transform: translateX(-9999px);
+    opacity: 0;
   }
 }
 @keyframes page-visibility {
   0% {
-    transform: translateX(-9999px);
+    opacity: 0;
   }
   100% {
-    transform: translateX(0px);
+    opacity: 1;
   }
 }
 @keyframes menu-opacity {
@@ -111,14 +111,10 @@ body {
   width: 164px;
 }
 
-body {
-  overflow: hidden visible;
-}
-
 .page {
+  opacity: 1;
   animation: page-visibility 10ms ease-in 3000ms both;
   height: 100%;
-  overflow-y: inherit;
 }
 
 .presentation__map {
@@ -344,6 +340,7 @@ body {
 }
 
 .loader {
+  opacity: 1;
   animation: loader 10ms ease-out 3000ms forwards;
   position: relative;
   display: flex;
@@ -358,6 +355,7 @@ body {
   font-family: "Shrikhand", sans-serif;
   color: #9356dc;
   margin: 0;
+  padding-bottom: 5px;
   animation: title 1s ease-in 1.1s forwards;
 }
 .loader__container__container2 {

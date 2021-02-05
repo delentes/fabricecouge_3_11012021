@@ -1,4 +1,5 @@
 .loader{
+    opacity: 1;
     animation: loader 10ms ease-out 3000ms forwards;
     position: relative;
     display: flex;
@@ -11,6 +12,7 @@
             font-family: 'Shrikhand' , sans-serif;
             color: $primary;
             margin: 0;
+            padding-bottom: 5px;
             animation: title 1s ease-in 1.1s forwards;
         }
         &__container2{
