@@ -45,6 +45,8 @@
         z-index: -1;
         font-weight: bold;
         transition: opacity 150ms ease-in-out;
-        color:$primary;
+        background: linear-gradient(to bottom ,$primary 0%,$secondary 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }

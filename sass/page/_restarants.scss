@@ -60,26 +60,26 @@
                 }
                 &:hover &__container2__title {
                     width: 65%;
-                    transition: 1000ms;
+                    transition: 500ms;
                     text-overflow: ellipsis;
                     overflow: hidden;
                     white-space: nowrap;
                 }
                 &:hover &__container2__byline{
                     width: 65%;
-                    transition: 1000ms;
+                    transition: 500ms;
                 }
                 &:hover &__container3{
                     transform: translateX(-58px);
-                    transition: transform 1000ms;
+                    transition: transform 500ms;
                 }
                 &:hover &__container3__checkbox{
                     opacity: 1;
                     transition: opacity 100ms;
                 }
                 &:hover &__container3__checkbox__check{
-                    transform: rotate(-360deg);
-                    transition: transform 1000ms;
+                    transform: rotate(360deg);
+                    transition: transform 500ms;
                 }
                 &__container2{
                     width: 100%;
