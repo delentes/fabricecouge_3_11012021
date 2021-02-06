@@ -8,7 +8,7 @@
     height: 72px;
     width: 325px;
     border-radius: 1em;
-    box-shadow: 2px 5px 10px #c5c5c5;
+    box-shadow: 2px 5px 10px $box-shadox;
 }
 @mixin btn2 {
     display: inline-flex;
@@ -21,7 +21,7 @@
     text-decoration: none;
     border-radius: 2em;
     margin-left: 8px;
-    box-shadow: 2px 5px 10px  #c5c5c5;
+    box-shadow: 2px 5px 10px  $box-shadox;
     position: relative;
     z-index: 1;
     &:hover{

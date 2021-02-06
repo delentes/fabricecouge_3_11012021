@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/* variables */
-/* mixin */
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -356,6 +354,7 @@ body {
   font-family: "Shrikhand", sans-serif;
   color: #9356dc;
   margin: 0;
+  text-shadow: 2px 5px 10px #c5c5c5;
   padding-bottom: 5px;
   animation: title 1s ease-in 1.1s forwards;
 }
