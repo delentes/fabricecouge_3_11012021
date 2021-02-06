@@ -40,7 +40,7 @@
         z-index: -1;
         transition: opacity 250ms ease-in-out;
         background:linear-gradient(to bottom right,lighten($secondary,5%),lighten($primary,5%));
-        box-shadow: 2px 5px 10px darken($color: #c5c5c5, $amount: 5%);
+        box-shadow: 2px 5px 10px darken($color: $box-shadox, $amount: 5%);
         border-radius: 2em;
     }
 }
