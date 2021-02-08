@@ -528,7 +528,7 @@ body {
 }
 .section__menu__article__container:hover .section__menu__article__container__container3__checkbox {
   opacity: 1;
-  transition: opacity 100ms;
+  transition: opacity 10ms;
 }
 .section__menu__article__container:hover .section__menu__article__container__container3__checkbox__check {
   transform: rotate(360deg);
@@ -559,6 +559,8 @@ body {
   position: absolute;
   top: 0;
   right: -81px;
+  transform: translateX(0px);
+  transition: transform 500ms;
 }
 .section__menu__article__container__container3__price {
   background-color: white;

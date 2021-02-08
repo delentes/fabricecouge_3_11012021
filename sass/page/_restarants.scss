@@ -75,11 +75,11 @@
                 }
                 &:hover &__container3__checkbox{
                     opacity: 1;
-                    transition: opacity 100ms;
+                    transition: opacity 10ms;
                 }
                 &:hover &__container3__checkbox__check{
                     transform: rotate(360deg);
-                    transition: transform 500ms;
+                    transition: transform 500ms ;
                 }
                 &__container2{
                     width: 100%;
@@ -106,6 +106,8 @@
                     position: absolute;
                     top: 0;
                     right: -81px;
+                    transform: translateX(0px);
+                    transition: transform 500ms;
                     &__price{
                         background-color: white;
                         border-radius: 0 1em 1em 0;
