@@ -541,10 +541,12 @@ body {
 }
 .section__menu__article__container__container2__title {
   width: 80%;
+  transition: 500ms;
   margin: 12px 0 0 0;
 }
 .section__menu__article__container__container2__byline {
   width: 80%;
+  transition: 500ms;
   height: 19px;
   margin: 5px 0 12px 0;
   text-overflow: ellipsis;
