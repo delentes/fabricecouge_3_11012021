@@ -112,6 +112,7 @@ body {
 .page {
   opacity: 1;
   animation: page-visibility 10ms ease-in 3000ms both;
+  max-height: 100%;
 }
 
 .presentation__map {
@@ -328,15 +329,15 @@ body {
 .restaurant__container__link__fig__figcaption__container2__heart::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0.1px;
+  left: -0.5px;
   opacity: 0;
-  z-index: -1;
+  font-size: 105%;
   font-weight: bold;
-  transition: opacity 150ms ease-in-out;
   background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: opacity 150ms ease-in-out;
 }
 
 .loader {
@@ -409,7 +410,6 @@ body {
 .section {
   position: relative;
   background-color: #f6f6f6;
-  width: 100%;
 }
 .section__img {
   height: 255px;
@@ -446,15 +446,15 @@ body {
 .section__container__heart::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0.1px;
+  left: -0.5px;
   opacity: 0;
-  z-index: -1;
+  font-size: 105%;
   font-weight: bold;
-  transition: opacity 150ms ease-in-out;
   background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: opacity 150ms ease-in-out;
 }
 .section__menu {
   width: 100%;

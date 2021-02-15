@@ -1,6 +1,7 @@
 .page{
     opacity: 1;
     animation: page-visibility 10ms ease-in 3000ms both ;
+    max-height: 100%;
 }
 .presentation{
     &__map{
