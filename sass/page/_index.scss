@@ -118,8 +118,12 @@
                     flex-direction: row;
                     align-items: center;
                     justify-content: space-between;
+                    height: 30.7%;
+                    
                     &__container{
                         margin-left: 20px;
+                        height: 100%;
+                        align-items: center;
                         &__title{
                             margin: 15px 0 7px 0;
                             font-size: 1em;
@@ -129,6 +133,7 @@
                         }
                     }
                     &__container2{
+                        padding-bottom: 4%;
                         &__heart{
                             @include full-hearth;
                             font-size: 21px;

@@ -1,7 +1,9 @@
 .loader{
     opacity: 1;
     animation: loader 10ms ease-out 3000ms forwards;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     &__container{

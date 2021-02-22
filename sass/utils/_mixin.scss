@@ -39,10 +39,10 @@
     &::after{
         content: "\f004";
         position: absolute;
-        top: 0.1px;
-        left: -0.5px;
+        top: -0.5px;
+        left: -1px;
         opacity: 0;
-        font-size: 105%;
+        font-size: 108%;
         font-weight: bold;
         background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
         -webkit-background-clip: text;

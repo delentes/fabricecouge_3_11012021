@@ -62,6 +62,9 @@
                 margin-bottom: 40px;
                 &__fig{
                     background-color: $back-sec;
+                    &__figcaptation__container{
+                        align-items: center;
+                    }
                 }
             }
         }

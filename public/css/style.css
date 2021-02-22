@@ -305,9 +305,12 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  height: 30.7%;
 }
 .restaurant__container__link__fig__figcaption__container {
   margin-left: 20px;
+  height: 100%;
+  align-items: center;
 }
 .restaurant__container__link__fig__figcaption__container__title {
   margin: 15px 0 7px 0;
@@ -315,6 +318,9 @@ body {
 }
 .restaurant__container__link__fig__figcaption__container__byline {
   margin: 0;
+}
+.restaurant__container__link__fig__figcaption__container2 {
+  padding-bottom: 4%;
 }
 .restaurant__container__link__fig__figcaption__container2__heart {
   position: relative;
@@ -329,10 +335,10 @@ body {
 .restaurant__container__link__fig__figcaption__container2__heart::after {
   content: "";
   position: absolute;
-  top: 0.1px;
-  left: -0.5px;
+  top: -0.5px;
+  left: -1px;
   opacity: 0;
-  font-size: 105%;
+  font-size: 108%;
   font-weight: bold;
   background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
@@ -343,7 +349,9 @@ body {
 .loader {
   opacity: 1;
   animation: loader 10ms ease-out 3000ms forwards;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
 }
@@ -446,10 +454,10 @@ body {
 .section__container__heart::after {
   content: "";
   position: absolute;
-  top: 0.1px;
-  left: -0.5px;
+  top: -0.5px;
+  left: -1px;
   opacity: 0;
-  font-size: 105%;
+  font-size: 108%;
   font-weight: bold;
   background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
@@ -813,6 +821,9 @@ body {
   }
   .restaurant__container__link__fig {
     background-color: #f6f6f6;
+  }
+  .restaurant__container__link__fig__figcaptation__container {
+    align-items: center;
   }
 
   .section {
