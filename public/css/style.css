@@ -335,10 +335,10 @@ body {
 .restaurant__container__link__fig__figcaption__container2__heart::after {
   content: "";
   position: absolute;
-  top: 0;
+  top: -1px;
   left: -1px;
   opacity: 0;
-  font-size: 108%;
+  font-size: 110%;
   font-weight: bold;
   background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
@@ -454,10 +454,10 @@ body {
 .section__container__heart::after {
   content: "";
   position: absolute;
-  top: -0.5px;
-  left: -1px;
+  top: 0;
+  left: -1.5px;
   opacity: 0;
-  font-size: 108%;
+  font-size: 109%;
   font-weight: bold;
   background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
