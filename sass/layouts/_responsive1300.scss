@@ -1,4 +1,4 @@
-@media screen and (min-width:1300px){
+@media screen and (min-width:1201px){
     body{
         background:linear-gradient(to left ,$tertiary 0%,$back-sec 5%,$back-sec 95%,$tertiary 100%);
     }
@@ -41,6 +41,10 @@
                 width: 25%;
                 &__button{
                     background-color: $back-sec;
+                    padding-right: 10px;
+                }
+                &__button2{
+                    padding-right: 10px;
                 }
             }
         }

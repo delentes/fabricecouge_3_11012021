@@ -637,7 +637,7 @@ body {
   border-radius: 2em;
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1201px) {
   body {
     background: linear-gradient(to left, #99e2d0 0%, #f6f6f6 5%, #f6f6f6 95%, #99e2d0 100%);
   }
@@ -684,6 +684,10 @@ body {
   }
   .operation__container__container2__button {
     background-color: #f6f6f6;
+    padding-right: 10px;
+  }
+  .operation__container__container2__button2 {
+    padding-right: 10px;
   }
 
   .restaurant {
@@ -794,7 +798,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0px 70px;
+    margin: 0;
   }
   .operation__container__container2 {
     width: 45%;
@@ -802,8 +806,15 @@ body {
   }
   .operation__container__container2__button {
     background-color: #f6f6f6;
+    width: 100%;
+  }
+  .operation__container__container2__button2 {
+    width: 100%;
   }
 
+  .restaurant {
+    margin: 0;
+  }
   .restaurant__title {
     text-align: center;
     margin-bottom: 50px;
@@ -816,11 +827,12 @@ body {
     width: 100%;
   }
   .restaurant__container__link {
-    width: 35%;
+    width: 40%;
     margin-bottom: 40px;
   }
   .restaurant__container__link__fig {
     background-color: #f6f6f6;
+    width: 100%;
   }
   .restaurant__container__link__fig__figcaptation__container {
     align-items: center;
