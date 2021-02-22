@@ -335,7 +335,7 @@ body {
 .restaurant__container__link__fig__figcaption__container2__heart::after {
   content: "";
   position: absolute;
-  top: -0.5px;
+  top: 0;
   left: -1px;
   opacity: 0;
   font-size: 108%;
