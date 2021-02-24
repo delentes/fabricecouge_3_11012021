@@ -13,9 +13,19 @@
         &__map{
             background-color: transparent;
             box-shadow: none;
-            width: 16%;
+            width: 15%;
             margin-left: 42%;
-            padding-left: 30px;
+            padding-left: 20px;
+            &:hover{
+                background-color: $back-map;
+                border-radius: 1em;
+            }
+            &:hover &__search{
+                background-color: $back-map;
+            }
+            &__marker{
+                padding-left: 20px;
+            }
             &__search{
                 background-color: transparent;
             }
